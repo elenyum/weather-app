@@ -3,6 +3,11 @@
 ```
 docker-compose build
 docker-compose up -d 
+
+cp app/.env.example app/.env
+docker compose run --rm app composer install
+docker-compose run --rm app php artisan config:cache
+docker compose run --rm app php artisan key:generate
 ```
 
 Aplikacija ce biti otvorena na adresi:
@@ -17,6 +22,8 @@ BODY params
 - lat
 - long
 ```
+
+![Alt text](image.png)
 
 ###Weather API
 
