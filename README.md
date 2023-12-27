@@ -1,4 +1,4 @@
-##POKRETANJE PROJEKTA
+## POKRETANJE PROJEKTA
 
 ```
 docker-compose build
@@ -15,7 +15,7 @@ Aplikacija ce biti otvorena na adresi:
 http://localhost:8080
 ```
 
-###API ruta
+### API ruta
 ```
 POST http://localhost:8080/weather
 BODY params
@@ -25,7 +25,7 @@ BODY params
 
 ![Alt text](image.png)
 
-###Weather API
+### Weather API
 
 U projektu je koriscen Weather API(https://www.weatherapi.com/) jer Open Weather nema besplatnu verziju servisa bez nekog subscription paketa koji nude, pa je ovo korisceno kao alternativa.
 
